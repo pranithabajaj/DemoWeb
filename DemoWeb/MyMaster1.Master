@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MyMaster1.Master.cs" Inherits="DemoWeb.MyMaster1" %>
+
+<!DOCTYPE html>
+
+<html>
+ <head runat="server">
+<link href="Styles/StyleSheet1.css" rel="stylesheet" />
+
+    <script></script>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style3 {
+            position: fixed;
+            left: 10px;
+            top: 0px;
+            width: 100%;
+            height: 25%;
+        }
+        .auto-style2 {
+            position: fixed;
+            left: 10px;
+            top: 25%;
+            width: 15%;
+            height: 100%;
+        }
+        .auto-style1 {
+            position: fixed;
+            left: 16%;
+            top: 25%;
+            width: 100%;
+            height: 100%;
+        }
+        .auto-style9 {
+            height: 77px;
+        }
+        .auto-style10 {
+            height: 383px;
+        }
+    </style>
+</head>
+<body>
+    <div  class="auto-style2">
+ <ul class="auto-style10">
+  <li><a href="#Home" class="auto-style9">Home</a></li>
+  <li><a href="Addemp.aspx" class="auto-style9">Add Employee</a></li>
+  <li><a href="Updateemp.aspx" class="auto-style9">Update Employee</a></li>
+  <li><a href="Deleteemp.aspx" class="auto-style9">Delete Employee</a></li>
+    <li><a href="First.aspx" class="auto-style9">First</a></li>
+</ul>
+    </div>
+    <div  class="auto-style3">
+    <img src="Images/img1.jpg" style="position:absolute;width:100%;height:100%" />
+    </div>
+<div class="auto-style1">
+    <form id="form1" runat="server">
+        <div>
+            <asp:Button ID="Button1" runat="server" Text="Logout" OnClick="Button1_Click1" /></div>
+        <div>
+            <asp:Label ID="LblMsg" runat="server" Text="Label" Font-Bold="True" Font-Italic="True" ForeColor="#CC0000"></asp:Label>
+         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+             </div>
+    </form>
+</div>
+           
+        
+       
+    </body>
+</html>
